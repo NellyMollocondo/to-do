@@ -10,7 +10,7 @@ function TodoItem(props) {
     }
 
     return(
-        <li className='TodoItem'>
+        <li className='TodoItem' id={props.id}>
             <span 
             className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
             onClick={props.onComplete}

@@ -31,7 +31,7 @@ function TodoProvider(props) {
 
   const addTodo = (text) => {
     const newTodos = [...todos];
-    if (newTodos.findIndex(item => item.text === text)== -1) {
+    if (newTodos.findIndex(item => item.text === text)=== -1) {
       newTodos.push({
         completed: false,
         text
@@ -50,7 +50,7 @@ function TodoProvider(props) {
   };
       
   const deleteTodos = (text) => {
-    const todoIndex = todos.findIndex(todo => todo.text == text);
+    const todoIndex = todos.findIndex(todo => todo.text === text);
     const newTodos = [...todos];
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
